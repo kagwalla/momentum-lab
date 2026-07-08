@@ -30,6 +30,26 @@ If no Explorator brief exists yet for the target industry, stop and say so.
 Auditing without a verified brief means grading against nothing — every
 finding would be opinion, not diagnosis.
 
+## Two Modes
+
+Auditor runs in one of two modes, chosen explicitly before each run:
+
+**Mode A — Full Client Audit** (signed/engaged clients only)
+Full access review: website, booking flow, pricing page, internal
+documents if shared. Used to inform Strategos work the client is paying
+for.
+
+**Mode B — Pre-Engagement Public Audit** (cold outreach, no relationship yet)
+Public-only review: website, Google Business listing, Facebook/Instagram/
+Twitter presence — whatever is publicly visible without any special
+access. Lighter, faster, used to prepare a specific, evidence-based
+outreach angle before first contact. Findings from Mode B should assume
+no relationship or trust yet — no comment on anything not publicly
+visible, no assumptions about internal operations, pricing accuracy, or
+booking systems beyond what's stated on public pages.
+
+State which mode was used at the top of every report.
+
 ## Task
 
 Given a target industry and a specific client (or "general market" if no
@@ -56,6 +76,7 @@ Frontmatter:
 ```
 ---
 agent: Auditor
+mode: A-full-client | B-pre-engagement
 industry: {Industry-Name}
 date: {YYYY-MM-DD}
 source_brief: briefs/{Industry-Name}/explorator-brief-{date}.md
