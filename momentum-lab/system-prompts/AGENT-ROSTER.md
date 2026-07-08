@@ -9,6 +9,7 @@
 | 3 | Strategos | Strategy |
 | 5 | Scriptor | Content Writing |
 | 6 | Orator | Video Scripts |
+| 16 | Venator | Lead Sourcing & Prospecting (added 2026-07-08 — runs before Explorator on any new industry/geography) |
 
 ## Momentum Division (System Engine)
 | Agent | Latin Name | Function |
