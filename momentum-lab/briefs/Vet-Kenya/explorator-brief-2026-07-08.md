@@ -10,44 +10,53 @@ verified_records_only: true
 
 ## Market Snapshot
 
-`Master_Industry_Library` has a Vet-Kenya record (`recMGcLSg3KBMC7F2`), but
-carries no verified compliance guardrails or supporting data beyond the tag
-itself. Insufficient verified signal to characterize market size or shape.
+8 verified `Core_Context_Matrix` records for Vet-Kenya as of this run: 3
+Audience_Pain, 3 Service_Tier, 2 FAQ_Objection. All 8 were reviewed and
+verified 2026-07-08 (see Open Questions for the one caveat carried forward).
+No verified `Compliance_Guardrails` on the `Master_Industry_Library` record
+yet — flag if regulatory claims are needed later.
 
 ## Audience Pain Points
 
-No verified records. See Open Questions.
+1. **Anxiety & Trust** — Owners fear clinical, cold environments that
+   stress their pets. They want fear-free certified environments and clear
+   pre-visit communication on what to expect.
+2. **Friction to Book** — Difficulty getting timely appointments during
+   urgent issues. Long wait times erode trust and push owners toward
+   informal alternatives.
+3. **Opaque Pricing** — Sticker shock from unexpected emergency procedure
+   or diagnostic costs. Owners want upfront itemized estimates before
+   treatment begins.
 
 ## Service Tiers Observed
 
-No verified records. See Open Questions.
+1. **Tier 1: Entry** — Annual wellness exams, core vaccinations, flea/tick
+   prevention. Low-friction entry point for new clients.
+2. **Tier 2: Mid** — Dental cleaning, spay/neuter, diagnostic bloodwork and
+   X-rays. Mid-tier upsell after trust is established.
+3. **Tier 3: Premium** — Orthopedic surgery, internal medicine, urgent
+   triage. High-value, high-trust tier. ⚠️ **Carried-forward caveat**: the
+   "24/7 availability" claim requires client operational-hours confirmation
+   before use in any client-facing content.
 
 ## Common Objections / FAQs
 
-No verified records. See Open Questions.
+1. **"How do I know if my pet needs emergency care?"** — Angle: a clear
+   3-point triage checklist (gum color, breathing rate, lethargy level) to
+   establish authority and reduce delayed-care decisions.
+2. **"Why are vet bills so expensive?"** — Angle: vets operate a full-scale
+   hospital (pharmacy, lab, surgical suite) under one roof without
+   government subsidies. Reframe cost as the true price of comprehensive
+   care, not a markup.
 
 ## Open Questions
 
-**Blocking finding**: `Core_Context_Matrix` contains 8 records linked to
-Vet-Kenya — 3 `Audience_Pain`, 3 `FAQ_Objection`, 3 `Service_Tier` — and all
-8 are substantive, well-formed entries (tiered pricing structure, named
-objections, triage-angle FAQ content). **None of the 8 have `Data_Verified`
-checked.**
-
-Per the Vault-D1 hard rule, unverified records do not exist to this agent.
-This brief is correctly near-empty as a result — not because the market
-research is thin, but because no one has flipped the verification flag on
-work that already looks complete.
-
-This is not an Explorator failure to fix by loosening the rule. It's a
-decision point for Benardette / Custos (Agent 13, the only role authorized
-to write to Vault-D1):
-
-1. Review the 8 unverified `Core_Context_Matrix` records for Vet-Kenya
-2. If accurate, mark `Data_Verified = true` on each
-3. Re-run Explorator — the brief should populate fully once that happens
-
-Until that review happens, Auditor and Strategos have nothing usable to
-build on for Vet-Kenya specifically. This also means the "run one real
-cycle before building schemas" plan is currently blocked one step earlier
-than expected: not by missing data, but by an unrun verification step.
+- **Tier 3 24/7 claim** is verified as research but not yet confirmed
+  against actual client operational hours. Auditor/Strategos should not
+  let downstream content assert 24/7 availability until that's confirmed.
+- **Compliance_Guardrails** field on the Vet-Kenya industry record is
+  empty. Worth populating before any medical-claim-adjacent content
+  (e.g. triage checklist) goes out, given the sensitivity of health advice.
+- This is the first fully populated brief in the pipeline. Treat this
+  format as the working reference for Auditor/Strategos consumption —
+  confirm it's actually usable before industry #2 runs through Explorator.
